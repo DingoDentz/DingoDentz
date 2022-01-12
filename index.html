@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	html{
+		scroll-behavior: smooth;
+
+	}
+	/*Navbar*/
+	.navbar{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rebeccapurple;
+		position: sticky;
+		top: 0;
+	}
+	.navbar ul{
+		display: flex;
+		list-style: none;
+		margin: 30px 0 px;
+	}
+	.navbar ul li{
+		font-family: century;
+		font-size: 1.1rem;
+		font-weight: bold;
+	}
+	.navbar ul li a{
+		text-decoration: none;
+		color: white;
+		padding: 8px 25px;
+		transition: all .5s ease;
+	}	
+	.navbar ul li a:hover{
+		background-color: white;
+		color: black;
+		box-shadow: 0 0 10px white;
+	}
+	/*Home Section*/
+	#home{
+		display: flex;
+		flex-direction: column;
+		background-color: dimgrey;
+		opacity: .4;
+		height: 840px;
+		justify-content: center;
+		align-items: center;
+		color: white;
+	}
+	#home::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: url(22.jpg) no-repeat center center/cover;
+		height: 950px;
+		width: 100%;
+		z-index: -1;
+		opacity: .7;
+	}
+	.main{
+		display: flex;
+		flex-direction: column;
+		background-color: rebeccapurple;
+		border: 3px solid silver;
+		align-items: center;
+		position: absolute;
+		top: 30%;
+		right: 10%;
+	}
+	.headings{
+		font-family: cursive;
+		font-size: 3rem;
+		text-align: center;
+		margin: 40px 0px;
+	}
+	.btn{
+		padding: 10px 35px;
+		background-color: transparent;
+		border: 1px solid burlywood;
+		color: white;
+		outline: none;
+		transition: .6s ease;
+	}
+	.btn:hover{
+		cursor: pointer;
+		background-color: white;
+		color: black;
+		box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+		font-weight: bold;
+	}
+	#about{
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		padding: 30px;
+		margin-bottom: 50px;
+		background-color: lavenderblush;
+	}
+	#pic{
+		display: flex;
+	}
+	#pic img{
+		width: 410px;
+		height: 410px;
+	}
+	#intro{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding: 30px;
+		text-anchor: middle;
+	}
+	#intro h2{
+		font-size: 2rem;
+		margin-bottom: 30px;
+	}
+	#portfolio{
+		display: flex;
+		flex-direction: column;
+		background-color: gainsboro;
+		color: white;
+		align-items: center;
+		padding: 20px;
+
+	}
+	.gallery{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		box-sizing: border-box;
+	}
+	.gallery img{
+		width: 200px;
+		height: 200px;
+		margin: 30px;
+	}
+	#services{
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+	}
+	.row{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+	}
+	.box{
+		display: flex;
+		flex-direction: column;
+		width: 350px;
+		height: 450px;
+		border: 1px solid black;
+		margin: 20px;
+		align-items: center;
+		text-align: justify;
+		padding: 20px;
+		border-radius: 15px;
+		background: linear-gradient(to top, burlywood 50%, white50%);
+		background-size: 100% 200%;
+		transition: all .8s;
+	}
+	.box:hover{
+		background-position: left bottom;
+		color: black;
+		border: none;
+		box-shadow: 0 0 30px darkred;
+	}
+	.box img{
+		width: 80px;
+		height: 80;
+		background-color: white;
+		padding: 10px;	
+	}
+	#contact{
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		background-color: black;
+		color: white;
+		padding: 20px;
+	}
+	.form{
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		align-items: center;
+		margin: 20px opx;
+
+	}
+	.input{
+		padding: 12px;
+		margin: 15px;
+		width: 30%;
+		border: none;
+		outline: none;
+	}
+	#msg{
+		width: 20px;
+		padding: 10px;
+		margin: 15px;
+		border: none;
+		outline: none;
+	}
+	#send{
+		padding: 10px;
+		width: 10%;
+		height: 10px;
+		margin: 40px;
+		border: none;
+		outline: none;
+	}
+	#send:hover{
+		cursor: pointer;
+		box-shadow: 0 0 30px white;
+	}
+
+
+</style>
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+		    <li><a href="#home">Home Page</a></li>
+		    <li><a href="#about">Biodata</a></li>
+		    <li><a href="#portfolio">Gallery</a></li>
+		    <li><a href="#services">Experiences</a></li>
+		    <li><a href="#contact">Contact Me</a></li>
+	    </ul>
+    </nav>
+
+    <section id="home">
+    	<div class="main">
+    		<h1 class="headings">I AM <br> Muhd Ikmal Aizzat</h1>
+    		<button class="btn" onclick="document.location='biodata.html'">Welcome to My HomePage</button>
+    	</div>
+
+    </section>
+
+    <section id="about">
+    	<div id="pic">
+    		<h1 class="headings">ABOUT ME</h1>
+    		<img src="23.jpg" alt="">
+    		<div id="intro">
+    			<h2>MUHAMAD IKMAL AIZZAT BIN MOHD ASERI</h2>
+    			<p>Assalamualaikum and I hope you all in pink of health. My nickname Ikmal.</p><p>First of all, I would like to thank ALLAH SWT and HIS messenger, Prophet Muhammad SAW.</p>
+    			<p>My deepest appreciation to my beloved lecturer which is Miss Nur Ainatul Mardiah binti Mat Nawi.</p>
+    			<p>It is possible for me to introduce myself through the website.</p>
+    		    <p>Back to this topic, I'm pursue studying my diploma at UiTM Machang and majoring in Information Management.</p>
+    		    <p>I have no siblings and lived in Kelantan almost 4 years. In the past, me and my family lived in Pahang because my father worked there.</p>	
+    		</div>
+    		
+    	</div>
+    </section>
+
+    <section id="portfolio">
+    	<h1 class="headings">Gallery</h1>
+    	<div class="gallery">
+    		<img src="01.jpg" alt="">
+    		<img src="02.jpg" alt="">
+    		<img src="27.jpg" alt="">
+    		<img src="21.jpg" alt="">		
+    	</div>	
+    </section>
+
+    <section id="services">
+    	<h1 class="headings">EXPERIENCES</h1>
+    	<div class="row">
+    		<div class="box">
+    			<img src="20.jpg">
+    			<h1 class="headings">Travel</h1>
+    			<p>Gapo haugjfjjsjsjjs dfsjsd djh zjdh a jhzd</p>
+    		</div>
+    		    <div class="box">
+    		    <img src="20.jpg">
+    			<h1 class="headings">Childhood</h1>
+    			<p>Gapo hau fdjhsdz d </p>
+    		</div>
+    	    	<div class="box">
+    	    	<img src="20.jpg">
+    			<h1 class="headings">Cat Lover</h1>
+    			<p>Gapo hau d zs ajhdfhdsjh</p>
+    		</div>	
+    	</div>
+    </section>
+
+    <section id="contact">
+    	<h1 class="headings">CONTACT Me</h1>
+    	<form action="" class="form">
+    		<input type="text" name="name" class="input" placeholder="MUHAMAD IKMAL AIZZAT BIN MOHD ASERI">
+    		<input type="email" name="email" class="input" placeholder="2019440168@uitm.edu.my">
+    	</form>
+    </section>
+
+</body>
+</html>

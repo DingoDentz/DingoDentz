@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Biodata</title>
+	<link rel="icon" href="2.jpeg">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			width: 100%;
+			height: auto;
+			padding: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.cont {
+			width: 80%;
+			position: relative;
+			height: auto;
+			border: 4px solid darkcyan;
+			border-radius: 0px 60px 0px 0px;
+		}
+		.cont::before{
+			content: "";
+			position: absolute;
+			width: 100%;
+			opacity: .4;
+			height: 100%;
+			z-index: -999;
+			background: url(20.jpg) center;
+			background-size: 100% 100%;
+
+		}
+		#hed {
+			font-size: 40px;
+			color: darkblue;
+			font-weight: 600;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			font-style: normal;
+			text-align: center;
+		}
+		table{
+			width: 100%;
+			margin: 40px;
+		}
+		.branchhed{
+			font-size: 30px;
+			color: darkturquoise;
+			font-weight: 600;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			font-style: oblique;
+			padding-left: 100px;
+		}
+		.content{
+			font-size: 30px;
+			font-weight: 500;
+			font-style: normal;
+			padding-left: 50px;
+		}
+		.value {
+			font-size: 25px;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+		}
+		.value.a{
+			font-weight: 600;
+			font-size: 25px;
+
+		}
+		fieldset{
+			border: 4px solid black;
+			border-radius: 30px;
+			margin: 30px;
+		}
+		.image{
+			position: absolute;
+			width: 250px;
+			height: 250px;
+			top: 30px;
+			right: 30px;
+			background: url(17.jpg) center;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<div class="cont">
+		<div class="image"></div>
+		<table cellspacing="20px">
+			<tr>
+				<td colspan="2" id="hed">Bio-Data<br>__________<br></td>
+			</tr> 
+			<tr>
+				<td colspan="2" class="branchhed"><br>Personal Detail<br></td>
+			</tr>
+			<tr class="content">
+				<td> <br>Name</td>
+				<td class="value.a">- Muhamad Ikmal Aizzat bin Mohd Aseri</td>
+			</tr>
+			<tr class="content">
+				<td>Qualification</td>
+				<td class="value">- Diploma in Information Management <br>&nbsp;&nbsp;(SPM)<br>&nbsp;&nbsp;(____)</td>
+			</tr>
+			<tr class="content">
+				<td>Date of Birth</td>
+				<td class="value">- 05/06/2001</td>
+			</tr>
+			<tr class="content">
+				<td>Height</td>
+				<td class="value">- 170cm</td>
+			</tr>
+			<tr class="content">
+				<td>Blood Group</td>
+				<td class="value">- O</td>
+			</tr>
+			<tr class="content">
+				<td>Hobby</td>
+				<td class="value">- Riding</td>
+			</tr>
+		</table>
+		<fieldset>
+			<table cellspacing="20px">
+				<tr>
+				<td colspan="2" class="branchhed"> Family Detail</td>
+			</tr>
+				<tr class="content">
+					<td>Father Name</td>
+					<td class="value">- Azmi bin Mohd Isa@ isa</td>
+				</tr>
+				<tr class="content">
+					<td>Mother Name</td>
+					<td class="value">- Rohani binti Mohd Zain</td>
+				</tr>
+		</fieldset>
+		<table>
+			<tr>
+				<td colspan="2" class="branchhed"> Contact Detail</td>
+			</tr>
+			<tr class="content">
+				<td>Address</td>
+				<td class="value">- Lot 121 Jalan Besar 2 Pulai Chondong</td>
+			</tr>
+			<tr class="content">
+				<td>Number Phone</td>
+				<td class="value">- 1) 0179646553 &nbsp;&nbsp; 2) 0129526587</td>
+		</table>
+
+
+</body>
+</html>

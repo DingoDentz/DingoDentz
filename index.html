@@ -30,7 +30,7 @@
 	}
 	.navbar ul li{
 		font-family: century;
-		font-size: 1.1rem;
+		font-size: 2.2rem;
 		font-weight: bold;
 	}
 	.navbar ul li a{
@@ -61,7 +61,7 @@
 		top: 0;
 		right: 0;
 		background: url(22.jpg) no-repeat center center/cover;
-		height: 950px;
+		height: 900px;
 		width: 100%;
 		z-index: -1;
 		opacity: .7;
@@ -74,7 +74,7 @@
 		align-items: center;
 		position: absolute;
 		top: 30%;
-		right: 10%;
+		right: 3%;
 	}
 	.headings{
 		font-family: cursive;
@@ -83,9 +83,10 @@
 		margin: 40px 0px;
 	}
 	.btn{
-		padding: 10px 35px;
+		font-size: 1rem;
+		padding: 20px 35px;
 		background-color: transparent;
-		border: 1px solid burlywood;
+		border: 5px solid burlywood;
 		color: white;
 		outline: none;
 		transition: .6s ease;
@@ -97,6 +98,7 @@
 		box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
 		font-weight: bold;
 	}
+	/*About Me*/
 	#about{
 		display: flex;
 		flex-direction: column;
@@ -109,13 +111,14 @@
 		display: flex;
 	}
 	#pic img{
-		width: 410px;
+		width: 365px;
 		height: 410px;
 	}
 	#intro{
 		display: flex;
 		flex-direction: column;
-		text-align: center;
+		text-align: left;
+		justify-content: center;
 		padding: 30px;
 		text-anchor: middle;
 	}
@@ -123,11 +126,12 @@
 		font-size: 2rem;
 		margin-bottom: 30px;
 	}
+	/*Gallery*/
 	#portfolio{
 		display: flex;
 		flex-direction: column;
 		background-color: gainsboro;
-		color: white;
+		color: black;
 		align-items: center;
 		padding: 20px;
 
@@ -139,9 +143,9 @@
 		box-sizing: border-box;
 	}
 	.gallery img{
-		width: 200px;
-		height: 200px;
-		margin: 30px;
+		width: 450px;
+		height: 450px;
+		margin: 10px;
 	}
 	#services{
 		display: flex;
@@ -157,9 +161,10 @@
 	.box{
 		display: flex;
 		flex-direction: column;
-		width: 350px;
-		height: 450px;
-		border: 1px solid black;
+		width: 500px;
+		height: 500px;
+		border: 5px solid black;
+		font-size: 1.1rem;
 		margin: 20px;
 		align-items: center;
 		text-align: justify;
@@ -176,11 +181,12 @@
 		box-shadow: 0 0 30px darkred;
 	}
 	.box img{
-		width: 80px;
-		height: 80;
+		width: 450px;
+		height: 800px;
 		background-color: white;
-		padding: 10px;	
+		padding: 20px;	
 	}
+	/*Contact Me*/
 	#contact{
 		display: flex;
 		flex-direction: column;
@@ -192,6 +198,7 @@
 	.form{
 		display: flex;
 		flex-direction: column;
+		font-size: 1rem;
 		box-sizing: border-box;
 		align-items: center;
 		margin: 20px opx;
@@ -231,7 +238,7 @@
 	<nav class="navbar">
 		<ul>
 		    <li><a href="#home">Home Page</a></li>
-		    <li><a href="#about">Biodata</a></li>
+		    <li><a href="#about">About Me</a></li>
 		    <li><a href="#portfolio">Gallery</a></li>
 		    <li><a href="#services">Experiences</a></li>
 		    <li><a href="#contact">Contact Me</a></li>
@@ -240,8 +247,8 @@
 
     <section id="home">
     	<div class="main">
-    		<h1 class="headings">I AM <br> Muhd Ikmal Aizzat</h1>
-    		<button class="btn" onclick="document.location='biodata.html'">Welcome to My HomePage</button>
+    		<h1 class="headings">I AM <br> Muhd Ikmal Aizzat <br> Welcome to my HomePage</h1>
+    		<p><a href="biodata.html" target="_blank"><button class="btn">Personnel Information</button></a>
     	</div>
 
     </section>
@@ -252,9 +259,9 @@
     		<img src="23.jpg" alt="">
     		<div id="intro">
     			<h2>MUHAMAD IKMAL AIZZAT BIN MOHD ASERI</h2>
-    			<p>Assalamualaikum and I hope you all in pink of health. My nickname Ikmal.</p><p>First of all, I would like to thank ALLAH SWT and HIS messenger, Prophet Muhammad SAW.</p>
+    			<p>Assalamualaikum and I hope you all in pink of health. My nickname is Ikmal.</p><p>First of all, I would like to thank ALLAH SWT and HIS messenger, Prophet Muhammad SAW.</p>
     			<p>My deepest appreciation to my beloved lecturer which is Miss Nur Ainatul Mardiah binti Mat Nawi.</p>
-    			<p>It is possible for me to introduce myself through the website.</p>
+    			<p>It is possible for me to introduce myself through the website without her help.</p>
     		    <p>Back to this topic, I'm pursue studying my diploma at UiTM Machang and majoring in Information Management.</p>
     		    <p>I have no siblings and lived in Kelantan almost 4 years. In the past, me and my family lived in Pahang because my father worked there.</p>	
     		</div>
@@ -265,10 +272,10 @@
     <section id="portfolio">
     	<h1 class="headings">Gallery</h1>
     	<div class="gallery">
-    		<img src="01.jpg" alt="">
-    		<img src="02.jpg" alt="">
-    		<img src="27.jpg" alt="">
-    		<img src="21.jpg" alt="">		
+    		<img src="01.jpg" alt="Photo of Suksis">
+    		<img src="02.jpg" alt="Photo at Beach">
+    		<img src="27.jpg" alt="Photo at Jeram">
+    		<img src="21.jpg" alt="Photo of Patriotisme">		
     	</div>	
     </section>
 
@@ -277,26 +284,30 @@
     	<div class="row">
     		<div class="box">
     			<img src="20.jpg">
-    			<h1 class="headings">Travel</h1>
-    			<p>Gapo haugjfjjsjsjjs dfsjsd djh zjdh a jhzd</p>
+    			<h1 class="headings">School Librarian</h1>
+    			<p>Awarded the library project<p>
+    		    <p>with Sir Zafian and team member of<p>
+    		    <p>Pustaka Tengku Anis</p>
     		</div>
     		    <div class="box">
     		    <img src="20.jpg">
-    			<h1 class="headings">Childhood</h1>
-    			<p>Gapo hau fdjhsdz d </p>
+    			<h1 class="headings">Cadet Police</h1>
+    			<p>Conducted research team into the cadet police</p>
     		</div>
     	    	<div class="box">
     	    	<img src="20.jpg">
-    			<h1 class="headings">Cat Lover</h1>
-    			<p>Gapo hau d zs ajhdfhdsjh</p>
+    			<h1 class="headings">Medic Volunteer </h1>
+    			<p>Helpers and knowledgeable about medication.</p>
     		</div>	
     	</div>
     </section>
 
     <section id="contact">
-    	<h1 class="headings">CONTACT Me</h1>
+    	<h1 class="headings">CONTACT ME</h1>
     	<form action="" class="form">
-    		<input type="text" name="name" class="input" placeholder="MUHAMAD IKMAL AIZZAT BIN MOHD ASERI">
+    		<h1>Number Phone</h1>
+    		<input type="text" name="name" class="input" placeholder="0179646553">
+    		<h2>E-mail</h2>
     		<input type="email" name="email" class="input" placeholder="2019440168@uitm.edu.my">
     	</form>
     </section>
